@@ -9,33 +9,73 @@
 <body class="bg-gray-50">
 
     <!-- Header -->
-    <header class="bg-white py-3 fixed top-0 left-0 w-full z-10 shadow-md">
-      <nav class="flex items-center justify-center container mx-auto px-6 relative">
-          <!-- Navbar -->
-          <ul class="flex space-x-6 text-gray-800 font-semibold absolute left-1/4 transform -translate-x-1/2">
-              <li><a href="biodata.html" class="hover:text-blue-600">About Me</a></li>
-              <li><a href="contact_us.html" class="hover:text-blue-600">Contact Us</a></li>
-              <li><a href="Posts.html" class="hover:text-blue-600">Free Content</a></li>
-              <li><a href="freepage.html" class="hover:text-blue-600">Free Content</a></li>
-          </ul>
-  
-          <!-- Logo -->
-          <div class="flex-shrink-0 mx-auto">
-              <img src="logo.jpg" alt="Logo" class="h-10">
-          </div>
-  
-          <!-- Auth Buttons -->
-          <div class="flex space-x-3 absolute right-1/4 transform translate-x-1/2">
-            <a href="#" class="text-black py-2 px-4 rounded-md hover:text-gray-900 text-lg">Log In</a>
-              <a href="#" class="text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-700">Sign Up</a>
-          </div>
-      </nav>
-  </header>
-    <main class="mt-24">
+<header class="bg-white py-3 fixed top-0 left-0 w-full z-10 shadow-md">
+  <nav class="container mx-auto px-6 flex items-center justify-center relative">
+    <!-- Navbar -->
+    <ul class="hidden md:flex space-x-6 text-gray-800 font-semibold absolute left-1/4 transform -translate-x-1/2">
+      <li><a href="biodata.html" class="hover:text-blue-600">About Me</a></li>
+      <li><a href="contact_us.html" class="hover:text-blue-600">Contact Us</a></li>
+      <li><a href="Posts.html" class="hover:text-blue-600">Free Content</a></li>
+      <li><a href="freepage.html" class="hover:text-blue-600">Free Content</a></li>
+    </ul>
+
+    <!-- Logo -->
+    <div class="flex-shrink-0 mx-auto">
+      <img src="logo.jpg" alt="Logo" class="h-10">
+    </div>
+
+    <!-- Auth Buttons -->
+    <div class="hidden md:flex space-x-3 absolute right-1/4 transform translate-x-1/2">
+      <a href="#" class="text-black py-2 px-4 rounded-md hover:text-gray-900 text-lg">Log In</a>
+      <a href="#" class="text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-700">Sign Up</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none absolute right-6">
+      <svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden md:hidden bg-white shadow-md">
+    <ul class="flex flex-col items-center space-y-4 text-gray-800 font-semibold py-4">
+      <li><a href="biodata.html" class="hover:text-blue-600">About Me</a></li>
+      <li><a href="contact_us.html" class="hover:text-blue-600">Contact Us</a></li>
+      <li><a href="Posts.html" class="hover:text-blue-600">Free Content</a></li>
+      <li><a href="freepage.html" class="hover:text-blue-600">Free Content</a></li>
+      <div class="flex flex-col space-y-3">
+        <a href="#" class="text-black py-2 px-4 rounded-md hover:text-gray-900 text-lg text-center">Log In</a>
+        <a href="#" class="text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-700 text-center">Sign Up</a>
+      </div>
+    </ul>
+  </div>
+</header>
+
+<script>
+  // Script to toggle mobile menu visibility
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+  <main class="mt-24">
 <section class="text-center py-16 bg-white">
-    <h1 class="text-3xl font-bold border-b-2 mb-4">WELCOME TO Andre PROJECT</h1>
-    <h1 class="text-4xl font-bold text-gray-800">Build a professional website that grows with your business.</h1>
-    <button class="bg-blue-600 text-white py-3 px-8 rounded-md text-lg font-semibold hover:bg-blue-700 transition-all duration-300">Create Your Website</button>
+    <h1 class="text-3xl font-bold b-2 mb-4">WELCOME TO Andre PROJECT</h1>
+    <h1 class="text-center text-4xl font-bold text-gray-800">
+      Build a professional website that grows
+      <br>
+      with your business
+  </h1>
+  
+  <button class="bg-blue-600 text-white py-3 px-8 rounded-md text-lg font-semibold hover:bg-blue-700 transition-all duration-300 mt-6">
+    Create Your Website
+</button>
+
 
     <!-- Showcase Image -->
     <div class="mt-8">
@@ -44,7 +84,7 @@
 </section>
         <!-- Free Website Info Section -->
         <section class="py-20 bg-white text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">Build a free website that grows with your business.</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Build a free website that <br> grows with your business.</h2>
             <p class="text-lg text-gray-600 mb-8 mx-auto max-w-2xl leading-relaxed">
                 Get access to customizable webpage designs and useful tools to build your website and grow your ideal business. Easily build a free website to help you get discovered and grow your customer base in style. Start today with our powerful free website builder.
             </p>
@@ -55,7 +95,7 @@
 
         <!-- Growth Steps Section -->
         <section class="py-20 bg-gray-50 px-4 sm:px-8 lg:px-16">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Succeed with the right website builder, from start to growth.</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Succeed with the right website<br>builder, from start to growth.</h2>
             <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div class="text-center">
                     <img src="oii.png" alt="Get Going Icon" class="w-24 mx-auto mb-4">
@@ -87,7 +127,11 @@
 
         <!-- Weebly + Square Section -->
         <section class="py-20 bg-white text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">Freedom to sell anytime, anywhere with Weebly + Square.</h2>
+          <h2 class="text-3xl font-bold text-gray-800 text-center leading-relaxed">
+            Freedom to sell anytime, <br> 
+            anywhere with Weebly + Square.
+        </h2>
+        
             <p class="text-lg text-gray-600 mb-8 mx-auto max-w-2xl leading-relaxed">
                 Weebly is now a part of the Square product suite. This means never missing a sale and letting your customers pay how they want to. Whether it's at a pop-up shop or your own online store, Square takes care of your payments for you, so you can focus on your business.
             </p>
@@ -115,29 +159,24 @@
 
         <!-- Build Your Website Section -->
         <section class="py-20 bg-white text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">Build your website, build your Success</h2>
-            <p class="text-lg text-gray-600 mb-8 mx-auto max-w-2xl leading-relaxed">
-                From tech hurdles big and small to business growth tips, help from our customer Success team is just an email, chat, or phone call away. Begin with Weebly's free website builder and learn on us for help along the way.
-            </p>
+          <h2 class="text-lg font-semibold text-gray-800 mb-4 text-center">Build your website, build your success</h2>
+          <p class="text-sm text-gray-600 mx-auto max-w-xl text-center leading-relaxed">
+            From tech hurdles big and small to business growth tips, help from our Customer Success team is just an email, chat, or phone call away. Begin with Weebly's free website builder and lean on us for help along the way.
+        </p>
+
             <img src="1.jpg" alt="Build Website" class="w-full h-auto rounded-xl shadow-lg">
         </section>
+      <div class="text-center">
+        <!-- Teks -->
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+          Grow your business, anytime, anywhere.
+        </h3>
+        <button class="bg-blue-600 text-white py-3 px-8 rounded-md text-lg font-semibold hover:bg-blue-700 transition-all duration-300 mt-6">
+          Get Started
+      </button>
+          
 
     </main>
-
-    <!-- Footer -->
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer Example</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100">
-
- <!-- Footer -->
-<footer class="bg-gray-100 text-gray-700 py-16">
-    <div class="container mx-auto px-4">
       <!-- Footer Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
         <!-- Product Section -->
@@ -190,21 +229,25 @@
         </div>
       </div>
     </div>
-  </footer>
   
-
-    <div class="text-center text-sm text-gray-500 mt-8">
-      <p>© 2024 Square, Inc</p>
+    <div class="text-center text-sm mt-8">
+      <p>&copy; 2024 Square, Inc</p>
     </div>
-
+  
     <div class="flex justify-center space-x-6 mt-4">
       <a href="#" class="text-gray-400 hover:text-gray-600">Facebook</a>
       <a href="#" class="text-gray-400 hover:text-gray-600">Twitter</a>
       <a href="#" class="text-gray-400 hover:text-gray-600">YouTube</a>
       <a href="#" class="text-gray-400 hover:text-gray-600">Instagram</a>
       <a href="#" class="text-gray-400 hover:text-gray-600">Google+</a>
+      <a href="https://unai.edu/" target="_blank" class="text-indigo-500 hover:text-indigo-600 font-semibold">
+        UNAI
+      </a>
+      <a href="https://fti.unai.edu/" target="_blank" class="text-indigo-500 hover:text-indigo-600 font-semibold">
+        FTI UNAI
+      </a>
     </div>
   </footer>
-
+  
 </body>
 </html>
