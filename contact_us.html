@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.webp" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hubungi Kami</title>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <header class="bg-gray-900 text-white py-6 shadow-md">
+        <h1 class="text-center text-2xl font-bold mb-4">Weebly</h1> 
+        <nav class="flex justify-center gap-6">
+            <a href="index.html" class="text-lg font-bold hover:text-black transition">Home</a>
+            <a href="biodata.html" class="text-lg font-bold hover:text-black transition">About</a>
+            <a href="contact_us.html" class="text-lg font-bold hover:text-black transition">contact_us</a>
+            <a href="Posts.html" class="text-lg font-bold hover:text-black transition">Posts</a>
+            <a href="freepage.html" class="text-lg font-bold hover:text-black transition">Free Content</a>
+        </nav>
+    </header>
+
+    <main class="max-w-2xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-center text-2xl font-semibold text-gray-900 mb-6">Hubungi Kami</h2>
+        <form action="#" method="post" class="flex flex-col gap-4">
+            <div>
+                <label for="first-name" class="block text-sm font-medium">Nama Depan:</label>
+                <input type="text" id="first-name" name="first-name" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="last-name" class="block text-sm font-medium">Nama Keluarga:</label>
+                <input type="text" id="last-name" name="last-name" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-medium">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="username" class="block text-sm font-medium">Nama Pengguna:</label>
+                <input type="text" id="username" name="username" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium">Kata Sandi:</label>
+                <input type="password" id="password" name="password" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+            </div>
+
+            <div>
+                <span class="block text-sm font-medium">Jenis Kelamin:</span>
+                <div class="flex items-center gap-4 mt-2">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" id="male" name="gender" value="male" class="focus:ring-2 focus:ring-gray-900">
+                        Pria
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" id="female" name="gender" value="female" class="focus:ring-2 focus:ring-gray-900">
+                        Wanita
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label for="dob" class="block text-sm font-medium">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="religion" class="block text-sm font-medium">Agama:</label>
+                <select id="religion" name="religion" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="address" class="block text-sm font-medium">Alamat:</label>
+                <textarea id="address" name="address" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-gray-900 focus:outline-none"></textarea>
+            </div>
+
+            <div>
+                <span class="block text-sm font-medium">Hobi:</span>
+                <div class="flex flex-wrap gap-4 mt-2">
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" id="hobby1" name="hobby" value="Olahraga" class="focus:ring-2 focus:ring-gray-900">
+                        Olahraga
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" id="hobby2" name="hobby" value="Membaca" class="focus:ring-2 focus:ring-gray-900">
+                        Membaca
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" id="hobby3" name="hobby" value="Berpetualang" class="focus:ring-2 focus:ring-gray-900">
+                        Berpetualang
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="py-2 px-4 bg-gray-900 text-white rounded hover:bg-gray-700 transition">Simpan</button>
+        </form>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-4 mt-8">
+        <p>&copy; 2024 Professional Website Builder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

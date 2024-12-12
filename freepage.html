@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Menarik & Interaktif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-blue-200 font-sans text-gray-800">
+
+    <header class="bg-gradient-to-r from-gray-900 to-gray-400 text-white py-10 text-center shadow-lg relative">
+        <h1 class="text-4xl mb-2 animate-fadeIn">Selamat Datang di Web Terakhir</h1>
+        <p class="text-xl mt-2">Tidak ada ketenangan selain bersama Yesus</p>
+    </header>
+
+    <nav class="bg-gray-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-center space-x-8">
+            <a href="index.html" class="text-lg font-bold hover:text-black transition">Home</a>
+            <a href="biodata.html" class="text-lg font-bold hover:text-black transition">About</a>
+            <a href="contact_us.html" class="text-lg font-bold hover:text-black transition">contact_us</a>
+            <a href="Posts.html" class="text-lg font-bold hover:text-black transition">Posts</a>
+            <a href="freepage.html" class="text-lg font-bold hover:text-black transition">Free Content</a>
+        </div>
+    </nav>
+
+    <section class="hero h-96 bg-cover bg-center relative flex items-center justify-center text-white" style="background-image: url('https://source.unsplash.com/featured/?nature,water');">
+        <h2 class="text-4xl bg-black bg-opacity-50 py-4 px-8 rounded-lg animate-slideIn">Mendapatkan Ketenangan</h2>
+    </section>
+
+    <div class="container mx-auto px-6 py-12">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card bg-white p-6 rounded-lg shadow-xl hover:transform hover:scale-105 hover:shadow-2xl transition-all">
+                <h3 class="text-2xl text-green-500 mb-4">Menjalani Alam</h3>
+                <p class="text-gray-600">Temukan keindahan alam yang menakjubkan dan nikmati pengalaman baru dalam menjelajahi keindahan alam.</p>
+            </div>
+            <div class="card bg-white p-6 rounded-lg shadow-xl hover:transform hover:scale-105 hover:shadow-2xl transition-all">
+                <h3 class="text-2xl text-green-500 mb-4">Petualangan</h3>
+                <p class="text-gray-600">Dengan pengalaman petualangan seru dan menarik, dikelilingi oleh pemandangan luar biasa bisa mendapatkan ketenangan di dalam diri kita.</p>
+            </div>
+            <div class="card bg-white p-6 rounded-lg shadow-xl hover:transform hover:scale-105 hover:shadow-2xl transition-all">
+                <h3 class="text-2xl text-green-500 mb-4">Beribadah dan Berdoa</h3>
+                <p class="text-gray-600">Apapun yang terjadi tetap mengutamakan beribadah dan berdoa kepada Tuhan karena ketenangan ada di dalam Yesus Kristus.</p>
+            </div>
+            <div class="card bg-white p-6 rounded-lg shadow-xl hover:transform hover:scale-105 hover:shadow-2xl transition-all">
+                <h3 class="text-2xl text-green-500 mb-4">Tujuan Wisata Baru</h3>
+                <p class="text-gray-600">Jelajahi berbagai tujuan wisata baru yang belum pernah Anda kunjungi, penuh dengan kejutan dan keajaiban yang bisa memberikan ketenangan.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center py-6 bg-gray-800 text-white mt-12 shadow-inner">
+        <p class="opacity-80 text-sm">&copy; 2024 Professional Website Builder. All rights reserved.</p>
+    </footer>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .animate-slideIn {
+            animation: slideIn 2s ease-out;
+        }
+    </style>
+</body>
+</html>
